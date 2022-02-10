@@ -1,0 +1,628 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 75%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, .footerInfo {
+  font-family: 'Yeseva One', sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.welcomeSection {
+  background-image:
+  url(https://github.com/jkfett/CuisineRestaurant/blob/main/brooke-lark-08bOYnH_r_E-unsplash.jpg?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 62em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 700px;
+}
+
+nav ul li {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+}
+
+ nav ul li a {
+  text-decoration: none;
+  color: black;
+ }
+
+.searchIcon {
+  height: 20px;
+  padding: 0 10px;
+  margin-top: 8px;
+}
+
+.shopCartIcon {
+  height: 20px;
+  padding: 0 5px;
+}
+
+.welcome > h1 {
+  font-size: 5em;
+  width: 30%;
+  margin: 3em 0em .5em 3em;
+  line-height: 1.5em
+}
+
+.search-container {
+  margin: 0 0 1em 15em;
+}
+
+.search-container input{
+  width: 30%;
+}
+
+.search-container [type=text] {
+  padding: 15px 8px 15px 13px;
+  margin-top: 10px;
+  font-size: .7rem;
+  border: 1px solid lightgrey;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  background-color: white;
+  color: rgba(161, 175, 189, .5);
+  float: left;
+}
+
+div form > button {
+  min-width: 10%;
+  padding: 14px;
+  float: left;
+  color: white;
+  margin-top: 10px;
+  border: 1px solid rgb(253, 136, 37);
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+  background-color: rgb(253, 136, 37);
+}
+
+.socialMediaGroup {
+  float: left;
+  width: 100%;
+  padding-left: 14.5em;
+  margin-top: 3em;
+}
+
+.socialMediaIcon {
+  height: 1.5em;
+}
+
+.socialMediaGroup > span {
+  padding-right: 2em;
+  font-size: 1.5em;
+}
+
+.aboutUs {
+  background-image: url(https://i.imgur.com/wPJUV11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75em;
+  width: 100%;
+  padding-top: 10em;
+  padding-left: 50em;
+}
+
+.aboutUs > span, .specialty > span, .title {
+  color: rgb(253, 136, 37);
+  font-size: 1.5em;
+}
+
+.aboutUs > h2 {
+  font-size: 4em;
+  width: 60%;
+}
+
+.aboutUs > p {
+  font-size: 1.25em;
+  width: 70%;
+  line-height: 2em;
+}
+
+.aboutUs > button {
+  min-width: 10%;
+  padding: 14.5px;
+  float: left;
+  color: white;
+  margin-top: 10px;
+  border: 1px solid rgb(253, 136, 37);
+  border-radius: .5em;
+  background-color: rgb(253, 136, 37);
+}
+
+.specialty {
+  background-color: rgb(242, 246, 247);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 6em;
+}
+
+.menu {
+  list-style: none;
+  padding-bottom: 1em
+}
+
+.menu > li {
+  display: inline-block;
+  width: 10%;
+  font-size: 1.75em;
+  border-bottom: 1px solid black;
+}
+
+.menu > li:hover, .menu > li:active{
+  color: rgb(253, 136, 37);
+  border-bottom: 2px solid rgb(253, 136, 37);
+}
+
+ .specialty > h2, .info > h2, .testimonials > h2 {
+   font-size: 4em;
+ }
+
+ .foodPicturesSection {
+   height: auto;
+ }
+
+.foodDish {
+    display: inline-block;
+    width: 20%;
+    height: 1px;
+    padding: 1%;
+    color: white;
+    text-align: center;
+}
+
+.starReview {
+  display: block;
+  height: 20px;
+  margin: 1em auto;
+}
+
+.foodImage {
+  height: 27em;
+  width: 21em;
+}
+
+.imageOverlay {
+  position: relative;
+  height: 27em;
+  width: 21em;
+  top: -27.1em;
+  left: 2px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.imageOverlay:hover {
+  opacity: 1;
+  background: rgba(13, 13, 37, .3);
+}
+
+.dishPrice {
+  display: block;
+  width: 100%;
+  padding-top: 1.5em;
+  font-size: 3em;
+}
+
+.dishName {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+  font-size: 3em;
+}
+
+.imageOverlay > button {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  background: rgb(253, 136, 37);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem 2rem 1rem 2rem;
+  display: inline;
+}
+
+.info {
+  background: white url(https://i.imgur.com/REnhbaT.png) no-repeat center;
+  background-size: cover;
+  height: 85em;
+  width: 100%;
+  text-align: center;
+  padding-top: 3em;
+  display: block;
+}
+
+.info > .phoneImage {
+  height: 8em;
+  margin: auto;
+}
+
+.infoWords {
+  font-size: 1.5em;
+  display: block;
+}
+
+.info > h3 {
+  font-size: 3em;
+  color: rgb(253, 136, 37);
+  margin: .5em auto;
+}
+
+.info > .weekday, .info > .weekend {
+  display: inline-block;
+  width: 49.5%;
+}
+
+.weekend > .hours, .weekday > .hours {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.foodVideo {
+  height: 50%;
+  width: 49.5%;
+  margin: 3em 0;
+}
+
+.arrowBox {
+  display: inline-block;
+  width: 20%;
+}
+
+.arrow {
+  height: 3em;
+  margin: 23em 2em;
+}
+
+.testimonials {
+  background: white;
+  height: 60em;
+  width: 100%;
+  text-align: center;
+  padding-top: 3em;
+  display: block;
+}
+
+.headShot {
+  height: 10em;
+}
+
+.testimonials > h3 {
+  font-size: 2em;
+}
+
+.testimonials > h4 {
+  font-size: 1.5em;
+  color: darkgray;
+  margin-top: -1em;
+}
+
+.testimonials > p {
+  font-style: italic;
+  font-size: 1.75em;
+  color: grey;
+  width: 70%;
+  margin: 2em auto;
+}
+
+.carousel {
+  color: rgb(253, 136, 37);
+}
+
+footer {
+  background-color: rgb(242, 246, 247);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+.footerOne {
+  display: inline-block;
+  width: 20%;
+  line-height: 1.5em;
+  padding-left: 2em;
+  margin-left: 5em;
+  float: left;
+}
+
+.footerOne > img {
+  height: 10em;
+}
+
+.footerInfo {
+  font-size: 2em;
+}
+
+.footerTwo {
+  display: inline-block;
+  width: 20%;
+  padding-left: 6em;
+  float: left;
+}
+
+.footerThree {
+  display: inline-block;
+  width: 22%;
+  padding-left: 6em;
+  float: left;
+}
+
+.footerFour {
+  display: inline-block;
+  width: 25%;
+  float: right;
+}
+
+footer > a {
+    color: orange;
+}
+
+.emailSubscribe [type=text] {
+  padding: 10px 60px 10px 13px;
+  font-size: .7rem;
+  border: 1px solid lightgrey;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  background-color: white;
+  color: rgba(161, 175, 189, .5);
+  float: left;
+}
+
+.emailSubscribe form > button {
+  min-width: 10%;
+  margin-top: 0;
+  padding: 8px;
+  float: left;
+  color: white;
+  border: 1px solid rgb(253, 136, 37);
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+  background-color: rgb(253, 136, 37);
+}
+
+.footerLine {
+  border-bottom: 1px solid lightgray;
+  clear: both;
+  padding-top: 10px;
+}
+
+footer > span {
+  width: 40%;
+  padding-left: 8em;
+}
+
+.footerSocial {
+  float: right;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+
+  .welcomeSection {
+    background-image:
+    url(https://github.com/jkfett/CuisineRestaurant/blob/main/brooke-lark-08bOYnH_r_E-unsplash.jpg?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .welcome > h1 {
+    font-size: 2em;
+    width: 30%;
+    margin: 3em 0em .5em 3em;
+    line-height: 1.5em
+  }
+
+  .search-container {
+    margin: 0 0 1em 6em;
+  }
+
+  .search-container [type=text] {
+    padding: 15px 8px 15px 13px;
+    margin-top: 10px;
+    font-size: .7rem;
+    border: 1px solid lightgrey;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+    background-color: white;
+    color: rgba(161, 175, 189, .5);
+    float: left;
+  }
+
+  div form > button {
+    min-width: 10%;
+    padding: 14px;
+    float: left;
+    color: white;
+    margin-top: 10px;
+    border: 1px solid rgb(253, 136, 37);
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    background-color: rgb(253, 136, 37);
+  }
+
+  .socialMediaGroup {
+    float: left;
+    width: 100%;
+    padding-left: 6em;
+    margin-top: 3em;
+  }
+
+  .aboutUs {
+    background-image: url(https://i.imgur.com/wPJUV11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55em;
+    width: 100%;
+    padding-top: 5em;
+    padding-left: 5em;
+  }
+
+  .aboutUs > p {
+    font-size: 1.25em;
+    width: 90%;
+    line-height: 2em;
+  }
+
+.aboutUs > h2 {
+  font-size: 2em;
+}
+
+  .specialty {
+    background-color: rgb(242, 246, 247);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 3em;
+  }
+
+  .menu > li {
+    display: inline-block;
+    width: 10%;
+    font-size: 1em;
+    border-bottom: 1px solid black;
+  }
+
+   .specialty > h2, .info > h2, .testimonials > h2 {
+     font-size: 2em;
+   }
+
+  .foodDish {
+      display: inline-block;
+      width: 40%;
+      height: 1px;
+      padding: 1%;
+      color: white;
+      text-align: center;
+  }
+
+
+  .info {
+    background: white url(https://i.imgur.com/REnhbaT.png) no-repeat center;
+    background-size: cover;
+    height: 50em;
+    width: 100%;
+    text-align: center;
+    padding-top: 3em;
+    display: block;
+  }
+
+  .info > .phoneImage {
+    height: 4em;
+    margin: auto;
+  }
+
+  .info > h3 {
+    font-size: 2em;
+    color: rgb(253, 136, 37);
+    margin: .5em auto;
+  }
+
+  .weekend > .hours, .weekday > .hours {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .foodVideo {
+    height: 40%;
+    width: 45.5%;
+  }
+
+  .arrow {
+    height: 3em;
+    margin: 10em 2em;
+  }
+
+  footer {
+    background-color: rgb(242, 246, 247);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+
+  .footerOne {
+    display: none;
+  }
+
+  .footerInfo {
+    font-size: 2em;
+  }
+
+  .footerTwo {
+    display: inline-block;
+    width: 40%;
+    padding-left: 6em;
+    float: left;
+  }
+
+  .footerThree {
+    display: inline-block;
+    width: 45%;
+    padding-left: 6em;
+    float: left;
+  }
+
+  .footerFour {
+    display: inline-block;
+    width: 70%;
+    float: right;
+  }
+
+  footer > a {
+      color: orange;
+  }
+
+  footer > span {
+    width: 70%;
+    padding-left: 8em;
+  }
+
+  .footerSocial {
+  width: 90%;
+  padding-right: 4em;
+  }
+}

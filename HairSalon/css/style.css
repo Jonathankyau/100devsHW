@@ -1,0 +1,541 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Cinzel', sans-serif;
+}
+
+/* h1, h2, .footerInfo {
+  font-family: 'Yeseva One', sans-serif;
+} */
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header, nav {
+  background: white;
+  height: 40px;
+}
+
+.ayeshaLogo {
+  height: 25px;
+  margin-left: 3%;
+  margin-top: 1%;
+  float: left;
+}
+
+ion-icon {
+  color: black;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 300px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+ nav ul li a {
+  text-decoration: none;
+  color: black;
+ }
+
+.searchIcon, .bagIcon {
+  height: 20px;
+  margin-top: -5px;
+}
+
+.dotIcon {
+  float: left;
+  margin-left: 120px;
+  margin-top: -5px;
+}
+
+.book {
+  text-decoration: none;
+  margin-left: 7px;
+}
+
+.welcome {
+  background-image:
+  url(https://github.com/jkfett/Hair-Salon/blob/main/salon-main-img.jpg?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1200px;
+  width: 100%;
+  color: white;
+  float: left;
+}
+
+.welcome > h1 {
+  margin-top: 30rem;
+  margin-left: 10rem;
+  margin-bottom: 0;
+  font-size: 10rem;
+  width: 60%;
+}
+
+.welcome > p {
+  margin-left: 10rem;
+  font-size: 2rem;
+}
+
+.black {
+  background: black;
+  color: white;
+  margin-left: 10rem;
+  font-size: 1.5rem;
+  padding-bottom: 1.25rem;
+  border: none;
+}
+
+.dotIcon2 {
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+
+}
+
+.discountBox {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 35rem;
+  width: 28rem;
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-top: 8rem;
+  font-size: 2rem;
+}
+
+.discountBox > span {
+  line-height: 5rem;
+}
+
+.summary {
+  float: left;
+  width: 100%;
+  margin-bottom: 15rem;
+}
+
+.beauticians > img, .services > img, .beautyProducts > img {
+  height: 15rem;
+}
+
+.beauticians, .services, .beautyProducts {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 25%;
+}
+
+.beauticians {
+  margin-left: 20rem;
+}
+
+
+.momentumSection {
+  clear: both;
+  background: rgb(243, 244, 246);
+  width: 100%;
+  height: 700px;
+}
+
+.momentumSection > h2 {
+  padding-top: 12rem;
+  margin-left: 15rem;
+  font-size: 4rem;
+  width: 30%;
+}
+
+.momentumSection > p {
+  padding-top: 1rem;
+  margin-left: 15rem;
+  font-size: 2rem;
+  width: 30%;
+}
+
+.momentumSection > .black {
+  margin-left: 15rem;
+  margin-top: 1rem;
+}
+
+.videoClip {
+  float: right;
+  margin-top: -40rem;
+  margin-right: 15rem;
+}
+
+.stylistSection {
+  padding: 5% 10%;
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+  text-align: center;
+  contain: content;
+}
+
+.stylistImage {
+  float: left;
+  height: 600px;
+  padding: 1%;
+  width: 33.33%;
+  text-align: center;
+}
+
+.stylist {
+  width: 350px;
+  height: 460px;
+}
+
+.stylistInfo {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background: black;
+  width: 56%;
+  margin-left: 90px;
+  margin-top: -50px;
+  padding-bottom: 1px;
+}
+
+.couponBottom {
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0 10%;
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Promo-Banner-Image.jpg?id=4553") no-repeat center;
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+}
+
+.couponBottom > h5 {
+  font-size: 2rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+}
+
+.couponBottom > h2 {
+  font-size: 4rem;
+  margin-left: 10rem;
+  width: 50%;
+}
+
+.lookbookSection {
+  display: block;
+  clear: both;
+}
+
+.lookbookText {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 500px;
+}
+
+.imageOne {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-01.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imageTwo {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-02.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imageThree {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-01.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imageFour {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-04.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imageFive {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-02.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.imageSix {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-03.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.lookbookSection, .bottomImages {
+  padding-left: 8%;
+  width: 91%
+}
+
+.imageSquare, .imageRectangle {
+  width:360px;
+  height:360px;
+  border: 5px solid white;
+}
+
+.imageRectangle {
+  height: 760px;
+}
+
+.bottomImages, .imageColumn {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  contain: content;
+}
+
+.imageColumn {
+  width: 33%;
+  float: left;
+}
+
+@media screen and (max-width: 700px) {
+
+.navText {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 150px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+  .searchIcon, .bagIcon {
+    height: 20px;
+    margin-top: -5px;
+  }
+
+  .welcome {
+    background-image:
+    url(https://github.com/jkfett/Hair-Salon/blob/main/salon-main-img.jpg?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    color: white;
+    float: left;
+  }
+
+  .welcome > h1 {
+    margin-top: 10rem;
+    margin-left: 8rem;
+    margin-bottom: 0;
+    font-size: 5rem;
+    width: 60%;
+  }
+
+  .welcome > p {
+    margin-left: 8rem;
+    font-size: 2rem;
+  }
+
+  .black {
+    background: black;
+    color: white;
+    margin-left: 8rem;
+    font-size: 1.5rem;
+    padding-bottom: 1.25rem;
+    border: none;
+  }
+
+  .discountBox {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30rem;
+    width: 22rem;
+    padding: 2rem;
+    margin-left: 8rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .summary {
+    float: left;
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 15rem;
+  }
+
+  .beauticians, .services, .beautyProducts {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 25%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .beauticians {
+    margin-left: 5rem;
+  }
+
+  .momentumSection {
+    clear: both;
+    background: rgb(243, 244, 246);
+    width: 100%;
+    height: 1000px;
+  }
+
+  .momentumSection > h2 {
+    padding-top: 5rem;
+    margin-left: 16rem;
+    font-size: 4rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  .momentumSection > p {
+    padding-top: 1rem;
+    margin-left: 15rem;
+    font-size: 2rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  .momentumSection > .black {
+    margin-left: 30rem;
+    margin-top: 1rem;
+  }
+
+  .videoClip {
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 5rem;
+    margin-left: 6rem;
+  }
+
+  .stylistSection {
+    padding: 5% 10%;
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    text-align: center;
+  }
+
+  .stylistImage {
+    float: left;
+    height: 600px;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .stylistInfo {
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background: black;
+    width: 40%;
+    margin-left: 160px;
+    margin-top: -50px;
+    padding: 0;
+  }
+
+  .couponBottom {
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0 10%;
+    background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Promo-Banner-Image.jpg?id=4553") no-repeat center;
+    background-size: cover;
+    width: 80%;
+    height: 300px;
+  }
+
+  .couponBottom > h5 {
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-top: 3rem;
+  }
+
+  .couponBottom > h2 {
+    font-size: 3rem;
+    margin-left: 6rem;
+    width: 50%;
+  }
+
+.couponBottom > .black {
+  margin-left: 6rem;
+}
+
+  .lookbookSection {
+    display: block;
+    clear: both;
+  }
+
+  .lookbookText {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 400px;
+  }
+
+  .lookbookSection, .bottomImages {
+    padding-left: 8%;
+    width: 91%
+  }
+
+  .imageSquare, .imageRectangle {
+    width:360px;
+    height:150px;
+    border: 5px solid white;
+  }
+
+  .imageRectangle {
+    height: 300px;
+  }
+
+  .bottomImages, .imageColumn {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    contain: content;
+  }
+
+  .imageColumn {
+    width: 33%;
+    float: left;
+  }
+}
