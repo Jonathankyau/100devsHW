@@ -1,0 +1,29 @@
+.hidden{
+	display: none;
+}
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-image: url("https://cdn.onebauer.media/one/media/5ddc/ffc7/0a4e/c494/e8f7/62f2/star-wars-rise-skywalker-kylo-rey.jpg?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg");
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 15%;
+  color: white;
+}
+
+#finn, #rey, #poe {
+  height: 25%;
+  width: 20%;
+}
