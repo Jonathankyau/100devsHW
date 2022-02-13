@@ -1,0 +1,44 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  margin-top: 15%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(236, 57, 2);
+  background-image: url('https://www.quickanddirtytips.com/sites/default/files/images/3293/math_nerd.jpg');
+  background-size: cover;
+}
+
+label, input {
+  margin: 2rem auto;
+}
+
+input {
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(236, 57, 2);
+}
+
+#mathButton {
+  margin: 0 20%;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(236, 57, 2);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
